@@ -32,6 +32,9 @@ class menuController extends Controller
     public function kirimDataSampah(){
         return view('petugas/kirimDataSampah');
     }
+    public function summary(){
+        return view('petugas/summary');
+    }
 
     //warga
     public function wargaDashboard(){

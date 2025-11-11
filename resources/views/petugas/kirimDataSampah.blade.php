@@ -135,9 +135,11 @@
     </style>
 </head>
 <body>
-    
     <div class="sidebar">
-        <div class="sidebar-item top-left-box"></div> <div class="sidebar-item">&#9776;</div> <div class="sidebar-item">&#x2302;</div> <div class="sidebar-item">&#x1F465;</div> <div class="sidebar-item">&#x1F4CB;</div> </div>
+        <div class="sidebar-item top-left-box"></div>
+            <a href="/petugas/kelolaDataSampah" class="sidebar-item" title="Home">&#x1F5D1;</a> 
+        <a href="/petugas/summary" class="sidebar-item" title="Histori">&#x1F550;</a> 
+    </div>
 
     <div class="main-content">
         

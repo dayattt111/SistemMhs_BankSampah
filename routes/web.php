@@ -19,6 +19,7 @@ Route::post('/petugas/kelolaDataSampah', [menuController::class, 'kelolaDataSamp
 Route::get('petugas/kelolaDataSampah', [menuController::class, 'kelolaDataSampah']);
 Route::get('/petugas/dataSampah', [menuController::class, 'dataSampah']);
 Route::post('/petugas/kirimDataSampah', [menuController::class, 'kirimDataSampah']);
+Route::get('/petugas/summary', [menuController::class, 'summary']);
 
 
 //warga

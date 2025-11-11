@@ -141,13 +141,15 @@
 </head>
 <body>
     
-    <div class="sidebar">
-        <div class="sidebar-item top-left-box"></div> <div class="sidebar-item">&#9776;</div> <div class="sidebar-item">&#x2302;</div> <div class="sidebar-item">&#x1F465;</div> <div class="sidebar-item">&#x1F4CB;</div> </div>
-
+<div class="sidebar">
+    <div class="sidebar-item top-left-box"></div>
+    <a href="/petugas/kelolaDataSampah" class="sidebar-item" title="Home">&#x1F5D1;</a> 
+    <a href="/petugas/summary" class="sidebar-item" title="Histori">&#x1F550;</a> 
+</div>
     <div class="main-content">
         
         <div class="header">
-            <span class="header-item icon">&#x1F514;</span> <div class="header-item input-box"></div> <div class="header-item input-box"></div> <span class="header-item profile-icon">&#x1F464;</span> </div>
+            <span class="header-item icon">&#x1F514;</span> <div class="header-item input-box"></div> <div class="header-item input-box"></div> <a href="/" class="header-item profile-icon">&#x1F464;</a> </div>
 
         <div class="page-body">
             <div class="form-card">

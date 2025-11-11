@@ -149,7 +149,7 @@
             <span class="icon">&#x1F514;</span> 
             <div class="input-box"></div>
             <div class="input-box"></div>
-            <span class="icon profile-icon">&#x1F464;</span>
+            <a href="/" class="header-item profile-icon">&#x1F464;</a>
         </div>
     </div>
     
