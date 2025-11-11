@@ -9,8 +9,13 @@ Route::get('/BackLogin', [menuController::class, 'backLogin']);
 Route::get('/Daftar', [menuController::class, 'Daftar']);
 
 //admin
-Route::post('admin/dashboard', [menuController::class, 'adminDashboard']);
-
+Route::post('Admin/dashboard', [menuController::class, 'adminDashboard']);
+Route::get('/Admin/dashboard', [menuController::class, 'adminDashboard']);
+Route::post('/Admin/kelolaDataSampah', [menuController::class, 'kelolaDataSampah']);
+Route::get('Admin/kelolaDataSampah', [menuController::class, 'kelolaDataSampah']);
+Route::get('/Admin/dataSampah', [menuController::class, 'dataSampah']);
+Route::post('/Admin/kirimDataSampah', [menuController::class, 'kirimDataSampah']);
+Route::get('/Admin/summary', [menuController::class, 'summary']);
 
 //petugas
 Route::post('petugas/dashboard', [menuController::class, 'petugasDashboard']);

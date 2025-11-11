@@ -6,6 +6,9 @@
     <title>Kelola Data Sampah</title>
     <style>
         /* Pengaturan Dasar */
+        *{
+            text-decoration: none;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -155,28 +158,29 @@
 </head>
 <body>
     
-    <div class="sidebar">
-        <div class="sidebar-item top-left-box"></div> 
-        <div class="sidebar-item">&#9776;</div> 
-        <div class="sidebar-item">&#x2302;</div> 
-        <div class="sidebar-item">&#x1F465;</div> 
-        <div class="sidebar-item">&#x1F4CB;</div> 
-    </div>
+<div class="sidebar">
+    <div class="sidebar-item top-left-box"></div>
+    <a href="/petugas/kelolaDataSampah" class="sidebar-item" title="Home">&#x1F5D1;</a> 
+    <a href="/petugas/summary" class="sidebar-item" title="Histori">&#x1F550;</a> 
+</div>
 
     <div class="main-content">
         
         <div class="header">
-            <span class="header-item icon">&#x1F514;</span> <div class="header-item input-box"></div> <div class="header-item input-box"></div> <span class="header-item profile-icon">&#x1F464;</span> </div>
+            <span class="header-item icon">&#x1F514;</span> <div class="header-item input-box"></div> <div class="header-item input-box"></div> <a href="/" class="header-item profile-icon">&#x1F464;</a> </div>
 
         <div class="page-body">
             
             <h2>Kelola Data Sampah</h2>
 
-            <div class="controls">
-                <button class="add-button">
-                    <span style="font-size: 18px; margin-right: 5px;">+</span> 
-                    <span>Tambah Sampah</span>
-                </button>
+            <form action="/petugas/dashboard" method="post">
+                @csrf
+                <div class="controls">
+                    <button type="submit" class="add-button">
+                        <span style="font-size: 18px; margin-right: 5px;">+</span> 
+                        <span>Tambah Sampah</span>
+                    </button>
+                </form>
                 
                 <input type="text" class="search-input" placeholder="Temukan Data Sampah">
             </div>
@@ -200,50 +204,8 @@
                         <td><div class="data-cell-box"></div></td>
                         <td><div class="data-cell-box"></div></td>
                         <td>
-                            <span class="action-icon">&#x270E;</span> <span class="action-icon">&#x1F5D1;</span> </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td>
-                            <span class="action-icon">&#x270E;</span>
-                            <span class="action-icon">&#x1F5D1;</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td>
-                            <span class="action-icon">&#x270E;</span>
-                            <span class="action-icon">&#x1F5D1;</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td>
-                            <span class="action-icon">&#x270E;</span>
-                            <span class="action-icon">&#x1F5D1;</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td><div class="data-cell-box"></div></td>
-                        <td>
-                            <span class="action-icon">&#x270E;</span>
-                            <span class="action-icon">&#x1F5D1;</span>
+                            <a class="action-icon" href="/petugas/dataSampah">&#x270E;</a>
+                            <a class="action-icon" href="#">&#x1F5D1;</a>
                         </td>
                     </tr>
                 </tbody>

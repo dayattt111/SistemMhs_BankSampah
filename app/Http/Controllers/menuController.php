@@ -18,6 +18,21 @@ class menuController extends Controller
     }
 
     //admin
+    public function adminDashboard(){
+        return view('admin/index');
+    }
+    public function kelolaDataSampah(){
+        return view('admin/kelolaDataSampah');
+    }
+    public function dataSampah(){
+        return view('admin/dataSampah');
+    }
+    public function kirimDataSampah(){
+        return view('admin/kirimDataSampah');
+    }
+    public function summary(){
+        return view('admin/summary');
+    }
 
     //petugas
     public function petugasDashboard(){
