@@ -22,7 +22,7 @@ class menuController extends Controller
 
     //petugas
     public function petugasDashboard(){
-        return view('petugas/index');
+        return view('petugas/kelolaDataSampah');
     }
 
 
